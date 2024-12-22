@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Adebayo Glover | Personal Portfolio Website | Software Engineer
+    </title>
+    <link rel="stylesheet" href="css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/7582075cbd.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <a href="index.html" class="logo-link">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 400 200"
+              width="400"
+              height="200"
+            >
+              <defs>
+                <linearGradient
+                  id="logoGradient"
+                  x1="0%"
+                  y1="0%"
+                  x2="100%"
+                  y2="100%"
+                >
+                  <stop
+                    offset="0%"
+                    style="stop-color: #1a2238; stop-opacity: 1;"
+                  />
+                  <stop
+                    offset="100%"
+                    style="stop-color: #ff6d3a; stop-opacity: 1;"
+                  />
+                </linearGradient>
+              </defs>
+              <rect
+                x="150"
+                y="50"
+                width="100"
+                height="100"
+                fill="url(#logoGradient)"
+                rx="50"
+                ry="50"
+              />
+
+              <!-- Centered text -->
+              <text
+                x="200"
+                y="100"
+                font-family="Arial, sans-serif"
+                font-size="20"
+                font-weight="bold"
+                text-anchor="middle"
+                dominant-baseline="middle"
+                fill="white"
+              >
+                AG
+              </text>
+            </svg>
+          </a>
+          <ul id="sidemenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Software Engineer</p>
+          <h1>Hi, I'm <span>Adebayo Glover</span><br />from Nigeria</h1>
+        </div>
+      </div>
+    </header>
+    <!-- -------------- about me --------------- -->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.png" alt="user" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I am a simple person in communication but with a complex mind to
+              solving problems. I enjoy logical solutions and critical thinking.
+              I am also very meticulous in my work so does not leave my i's
+              undotted or my t's uncrossed. When I commit to a project, I try to
+              improve after gaining new related ideas.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Web Development</span><br />Web app Development</li>
+                <li>
+                  <span>Mobile Development</span><br />Building Android/iOS apps
+                </li>
+                <li><span>UI/UX</span><br />Designing Web/App interfaces</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2023 - current</span><br />Software Engineer at
+                  GloverSoft
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2026</span><br />Back-End Developer(in process...) |
+                  boot.dev<button>
+                    <a href="#" download>Certification</a></button
+                  ><button>
+                    <a href="https://www.boot.dev" target="_blank"
+                      >Verify from School</a
+                    >
+                  </button>
+                </li>
+                <li>
+                  <span>2025</span><br />Front-End Engineer | codecademy<button>
+                    <a href="./download/Front-End Engineer.pdf" download
+                      >Certification</a
+                    ></button
+                  ><button>
+                    <a href="https://www.codecademy.com" target="_blank"
+                      >Verify from School</a
+                    >
+                  </button>
+                </li>
+                <li>
+                  <span>2024</span><br />Computer Science (CS50) | Havard
+                  University<button>
+                    <a href="./download/cs50.pdf" download
+                      >Certification</a
+                    ></button
+                  ><button>
+                    <a href="https://www.edx.com" target="_blank"
+                      >Verify from School</a
+                    >
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- -------------- services --------------- -->
+    <section id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Development</h2>
+            <p>
+              I build responsive, user-friendly, and optimized websites tailored
+              to client needs. From simple landing pages to complex web
+              applications, I use modern technologies like HTML, CSS,
+              JavaScript, and frameworks like React.js to deliver robust
+              solutions.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>
+              I design and develop mobile applications for both Android and iOS
+              platforms, ensuring they are intuitive, functional, and visually
+              appealing. Leveraging tools like Figma for design and Kotlin,
+              Swift, or Flutter for development, I create high-performing apps.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              I craft engaging and user-centered designs that provide seamless
+              experiences. My design process involves wireframing, prototyping,
+              and testing to ensure user satisfaction, using tools like Figma,
+              Adobe XD, and Sketch.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------- portfolio --------------- -->
+    <section id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" alt="work-1" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>
+                The app connects you to talented people around the world
+                Download it from Play Store.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" alt="work-2" />
+            <div class="layer">
+              <h3>Music App</h3>
+              <p>
+                The app connects you to talented people around the world
+                Download it from Play Store.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" alt="work-3" />
+            <div class="layer">
+              <h3>Online Shopping App</h3>
+              <p>
+                The app connects you to talented people around the world
+                Download it from Play Store.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </section>
+    <!-- -------------- contact --------------- -->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i> adebayoglover@gmail.com
+            </p>
+            <p>
+              <i class="fas fa-phone-square-alt"></i> (+234) 813 - 730 - 6318
+            </p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/AdebayoGlover" target="_blank"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://twitter.com/AdebayoGlover" target="_blank"
+                ><i class="fa-brands fa-square-x-twitter"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/adebayoglover/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/AdebayoGlover" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://www.instagram.com/adebayoglover/" target="_blank"
+                ><i class="fa-brands fa-square-instagram"></i
+              ></a>
+              <a href="https://www.threads.net/@adebayoglover" target="_blank"
+                ><i class="fa-brands fa-square-threads"></i
+              ></a>
+              <a
+                href="https://api.whatsapp.com/send?phone=2348137306318&text=Hello%20from%20your%20website!"
+                target="_blank"
+                ><i class="fa-brands fa-square-whatsapp"></i
+              ></a>
+            </div>
+            <a
+              href="download/Adebayo Glover, Updated CV.docx"
+              download
+              class="btn"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+                required
+              ></textarea>
+              <button type="submit" class="btn">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; <span id="year"></span> Adebayo Glover</p>
+      </div>
+    </section>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
